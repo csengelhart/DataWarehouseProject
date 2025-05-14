@@ -25,7 +25,7 @@ BI: Analytics & Reporting (Data Analytics)
 
 #### Objective
 
-Develop SQL-based analytiiics to deliver detailed insights into:
+Develop SQL-based analytics to deliver detailed insights into:
 - **Customer Behavior**
 - **Product Peroformance**
 - **Sales Trends**
