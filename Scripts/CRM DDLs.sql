@@ -1,3 +1,13 @@
+/*
+   Script to create tables for CRM source.
+   Script checks if the table already exists in the database
+   if the table exists, it is dropped and re-created.  
+
+   WARNING: running this script when tables already exists will cause 
+	    tables along with all data in said tables to be lost and new 
+            table created in its place.
+*/
+
 IF OBJECT_ID ('bronze.crm_cust_info' , 'U') IS NOT NULL
 	DROP TABLE bronze.crm_cust_info;
 CREATE TABLE bronze.crm_cust_info (
