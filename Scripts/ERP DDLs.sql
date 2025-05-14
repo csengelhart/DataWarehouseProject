@@ -1,3 +1,13 @@
+/*
+   Script to create tables for ERP source.
+   Script checks if the table already exists in the database
+   if the table exists, it is dropped and re-created.  
+
+   WARNING: running this script when tables already exists will cause 
+	    tables along with all data in said tables to be lost and new 
+            table created in its place.
+*/
+
 
 IF OBJECT_ID ('bronze.erp_loc_a101' , 'U') IS NOT NULL
 	DROP TABLE bronze.erp_loc_a101;
