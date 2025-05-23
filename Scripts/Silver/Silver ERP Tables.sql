@@ -1,10 +1,14 @@
 /*
+	=========================================================================
 	DDL Script: Create Silver Tables for ERP Sources
+	=========================================================================
 
 	Script Purpose:
 	This script creates tables in the 'silver' schema dropping existing tables
 	if they already exist.
 		Run this script to re-define the DDL structure of 'bronze' Tables
+
+	==========================================================================
 */
 
 IF OBJECT_ID ('silver.erp_loc_a101' , 'U') IS NOT NULL
