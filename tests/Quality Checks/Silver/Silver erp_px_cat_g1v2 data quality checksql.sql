@@ -1,17 +1,23 @@
+/*
+	This script performs quality checks on silver.erp_px_cat_g1v2 table.
+	Quality checks such as checking for unwanted spaces in the fields cat, subcat, and maintenance.
+	Also checking data consistency and standardization in each field.
+*/
+
 SELECT
 	id,
 	cat,
 	subcat,
 	maintenance
 FROM
-	bronze.erp_px_cat_g1v2;
+	silver.erp_px_cat_g1v2;
 
 -- Check for unwanted spaces in cat, subcat, maintenance field 
 -- bronze result: no unwanted spaces in any fields
 SELECT 
 	*
 FROM
-	bronze.erp_px_cat_g1v2
+	silver.erp_px_cat_g1v2
 WHERE
 	cat != TRIM(cat) OR subcat != TRIM(subcat) OR maintenance != TRIM(maintenance);
 
@@ -21,14 +27,14 @@ WHERE
 SELECT 
 	DISTINCT cat
 FROM
-	bronze.erp_px_cat_g1v2;
+	silver.erp_px_cat_g1v2;
 
 SELECT
 	DISTINCT subcat
 FROM
-	bronze.erp_px_cat_g1v2;
+	silver.erp_px_cat_g1v2;
 
 SELECT
 	DISTINCT maintenance
 FROM
-	bronze.erp_px_cat_g1v2;
+	silver.erp_px_cat_g1v2;
