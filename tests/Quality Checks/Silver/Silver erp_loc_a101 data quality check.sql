@@ -1,7 +1,7 @@
 /*
 	This script performs essential data quality verification on the silver.erp_loc_a101 table, 
 	focusing on cid field integrity (no hyphens) and cntry field consistency (reformatted abbreviations and NULL/empty values standardized to 'N/A').
-/*
+*/
 
 SELECT
 	*
