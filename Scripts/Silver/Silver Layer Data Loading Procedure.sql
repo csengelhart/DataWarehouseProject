@@ -1,10 +1,27 @@
 
-/*
-	This script truncates tables in DataWarehouse silver layer and inserts data into them
-	from bronze layer. The sources for the datasets are CRM and ERP from bronze layer.
+/*	
+	==================================================================================
+	Stored Procedure: Load Silver Layer (Bronze -> Silver)
+	==================================================================================
 
+	Script Purpose:
+	This stored procedure performs the ETL (Extract, Transform, Load) process to populate the 
+	'silver' scema.
+
+	Actions Performed:
+	- Truncates silver tables.
+	- Inserts transformed and cleansed data from bronze into silver tables.
+
+	Parameters:
+	None.
+	This stored procedure does not accept any parameters or return any values/
+
+	Usage example:
+	EXEC Silver.load_silver
+	
 	WARNING: This script does truncate the tables, therefore if any adjustments have been made
 			 They will be lost.
+	===================================================================================
 */
 	
 CREATE OR ALTER PROCEDURE silver.load_silver AS
