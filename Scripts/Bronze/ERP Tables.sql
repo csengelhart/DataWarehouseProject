@@ -1,3 +1,9 @@
+/*	
+	===================================================================
+	Database Initialization Script: ERP Bronze Layer Table Creation
+	===================================================================
+*/
+
 
 IF OBJECT_ID ('bronze.erp_loc_a101' , 'U') IS NOT NULL
 	DROP TABLE bronze.erp_loc_a101;
