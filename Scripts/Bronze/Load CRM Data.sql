@@ -1,4 +1,8 @@
 /*
+	=======================================================================================
+	Load Bronze CRM Data
+	=======================================================================================
+
 	This script truncates tables in DataWarehouse and bulk inserts data into them
 	from filepath. The sources for the datasets are CRM and ERP. The script measures and outputs the time
 	it takes for each table to load data and also how much time it takes the bronze layer to load.
